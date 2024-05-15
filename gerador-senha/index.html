@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Project</title>
+
+    <link rel="stylesheet" href="./src/css/style.css"/>
+</head>
+<body>
+    <h1>First Project in Eletron</h1>
+    
+    <h2>Gerador de senha simples</h2>
+
+    <div class="wrapper wrapper-columns">
+        <div class="column">
+            <div class="form-options">
+                <p class="form-options__lead">
+                    Informe a quantidade de caracteres:
+                </p>
+                
+                <div class="form-action">
+                    <div class="form-group">
+                        <input type="number" placeholder="N° de Caracteres" minlength="1"  min="1" name="password" id="inputPassword"/>
+                    </div>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" name="letraMaiuscula" id="letraMaiuscula"/>
+                    <label for="letraMaiuscula">Inserir letras maiusculas</label>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" name="numeros" id="numeros"/>
+                    <label for="numeros">Inserir números</label>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" name="caracteresEspeciais" id="caracteresEspeciais"/>
+                    <label for="caracteresEspeciais">Inserir caracteres especiais</label>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <button id="btnGeneratePassword">Gerar Senha »</button>
+        </div>
+        <div class="column">
+
+            <div class="result">
+                <h3 class="result__cta">Nova Senha</h3>
+                <p id="inform-new-password"></p>
+
+                <button id="copy-password">
+                    <img src="src/img/ic-copy.svg" alt="Copy Password" />
+                    <span class="password-copied">Senha copiada!</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="./src/js/script.js" charset="utf8"></script>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "Generate_Password",
+  "version": "1.0.0",
+  "main": "main.js",
+  "homepage": "./",
+  "description": "Development of Generate Password",
+  "license": "ISC",
+  "author": "Lucas Dourado",
+  "scripts": {
+    "dev": "electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@electron-forge/cli": "^7.3.1",
+    "electron": "^29.1.5",
+    "electron-builder": "^24.13.3",
+    "electron-prebuilt": "^1.4.13"
+  },
+  "build": {
+    "appId": "lucas.dourado.Generate_Password",
+    "productName": "Development of Generate Password",
+    "compression": "normal",
+    "asar": true,
+    "extends": null,
+    "files": [
+      "src/ico/ico.png",
+      "src/css/style.css",
+      "src/js/script.js",
+      "src/ico/ico.png",
+      "src/img/ic-copy.svg",
+      "main.js",
+      "index.html"
+    ],
+    "linux": {
+      "target": "zip"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "/src/ico/ico.png"
+    }
+  }
+}
